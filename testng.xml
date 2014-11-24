@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+</listeners>
+    <test name="Test01 CreateOrder Single">
+    <classes>
+      <class name="DHL_pack.TC001_CreateOrder_Single"/>
+     </classes>
+    </test> <!-- Test -->   
+    <test name="Test02 CreateOrder Negative">
+   <classes>
+      <class name="DHL_pack.TC002_CreateOrder_Negative"/>
+      </classes>
+   </test> <!-- Test -->   
+     <test name="Test03 CreateOrder Multiple">
+       <classes>
+      <class name="DHL_pack.TC003_CreateOrder_Multiple"/>
+      </classes>
+   </test> <!-- Test -->
+     <test name="Test07 Edimsgcheck singleTest">   
+       <classes>
+      <class name="DHL_pack.TC007_Edimsgcheck_singleTest"/>
+      </classes>
+   </test> <!-- Test --> 
+     <test name="Test08 Edimsgcheck_multipleTest">  
+       <classes>
+      <class name="DHL_pack.TC008_Edimsgcheck_multipleTest"/>
+      </classes>
+   </test> <!-- Test --> 
+     <test name="Test09 uireceiving_wmsinbound_single">  
+       <classes>
+      <class name="DHL_pack.TC009_uireceiving_wmsinbound_single"/>
+      </classes>
+   </test> <!-- Test --> 
+     <test name="Test10 uireceiving_wmsinbound_multiple">  
+       <classes>
+      <class name="DHL_pack.TC010_uireceiving_wmsinbound_multiple"/>
+      </classes>
+   </test> <!-- Test -->
+       <test name="Test13 printputaway_single">  
+       <classes>
+      <class name="DHL_pack.TC013_printputaway_single"/>
+      </classes>
+   </test> <!-- Test -->
+      <test name="Test14 printincorrectorderid">  
+       <classes>
+      <class name="DHL_pack.TC014_printincorrectorderid"/>
+      </classes>
+   </test> <!-- Test -->
+      <test name="Test15 printputaway_multiple">  
+       <classes>
+      <class name="DHL_pack.TC015_printputaway_multiple"/>
+      </classes>
+   </test> <!-- Test -->
+      <test name="Test16 autoclosurereceipt_single">  
+       <classes>
+      <class name="DHL_pack.TC016_autoclosurereceipt_single"/>
+      </classes>
+   </test> <!-- Test -->
+    <test name="Test17 autoclosurereceipt_multiple">  
+       <classes>
+      <class name="DHL_pack.TC017_autoclosurereceipt_multiple"/>
+      </classes>
+   </test> <!-- Test -->
+     <test name="Test19 uiputaway">  
+       <classes>
+      <class name="DHL_pack.TC019_uiputaway"/>
+      </classes>
+  </test> <!-- Test -->
+      <test name="Test20 uiputawayincorrect">  
+       <classes>
+      <class name="DHL_pack.TC020_uiputawayincorrect"/>
+      </classes>
+  </test> <!-- Test -->
+      <test name="Test21 uiputaway_lpn">  
+       <classes>
+      <class name="DHL_pack.TC021_uiputaway_lpn"/>
+      </classes>
+  </test> <!-- Test -->
+      <test name="Test22 uiputaway_nonlpn">  
+       <classes>
+      <class name="DHL_pack.TC022_uiputaway_nonlpn"/>
+      </classes>
+  </test> <!-- Test -->
+      <test name="Test25 outboundsingle_pre4hr">  
+       <classes>
+      <class name="DHL_pack.TC025_outboundsingle_pre4hr"/>
+       </classes>
+  </test> <!-- Test -->
+      <test name="Test26 outboundsingle_pre2hr">  
+       <classes>
+      <class name="DHL_pack.TC026_outboundsingle_pre2hr"/>
+      </classes>
+  </test> <!-- Test -->
+      <test name="Test27 nonlpntracked">  
+       <classes>
+      <class name="DHL_pack.TC027_nonlpntracked"/>
+       </classes>
+  </test> <!-- Test -->     
+      <test name="Test28 pre2hr_edi">  
+       <classes>
+      <class name="DHL_pack.TC028_pre2hr_edi"/>
+       </classes>
+  </test> <!-- Test -->     
+       <test name="Test29 pre4hr_edi">  
+       <classes>
+      <class name="DHL_pack.TC029_pre4hr_edi"/>
+       </classes>
+  </test> <!-- Test -->     
+      <test name="Test30 outbound_uinextday">  
+       <classes>
+      <class name="DHL_pack.TC030_outbound_uinextday"/>
+       </classes>    
+  </test> <!-- Test -->
+      <test name="Test31 outbound_uinextday_nonlpn">  
+       <classes>
+      <class name="DHL_pack.TC031_outbound_uinextday_nonlpn"/>
+       </classes>    
+  </test> <!-- Test -->
+      <test name="Test32 outbound_serialnextday">  
+       <classes>
+      <class name="DHL_pack.TC032_outbound_serialnextday"/>
+       </classes>    
+   </test> <!-- Test -->
+      <test name="Test33 ordercreation_edi">  
+       <classes>
+      <class name="DHL_pack.TC033_ordercreation_edi"/>
+       </classes>    
+   </test> <!-- Test -->
+      <test name="Test34 ordercreation_nonlpn_edi">  
+       <classes>
+      <class name="DHL_pack.TC034_ordercreation_nonlpn_edi"/>
+       </classes>    
+   </test> <!-- Test -->
+      <test name="Test35 printpicklist_complete">  
+       <classes>
+      <class name="DHL_pack.TC035_printpicklist_complete"/>
+       </classes>    
+   </test> <!-- Test -->
+      <test name="Test36 printpicklist_partial">  
+       <classes>
+      <class name="DHL_pack.TC036_printpicklist_partial"/>
+       </classes>    
+   </test> <!-- Test -->
+        <test name="Test37 printpicklist_nextday">  
+       <classes>
+      <class name="DHL_pack.TC037_printpicklist_nextday"/>
+       </classes>    
+   </test> <!-- Test -->
+      <test name="Test38 printpacklist_multiline_lpn">  
+       <classes>
+      <class name="DHL_pack.TC038_printpacklist_multiline_lpn"/>
+       </classes>    
+   </test> <!-- Test -->
+       <test name="Test39 printpacklist_multiline_nonlpn">  
+       <classes>
+      <class name="DHL_pack.TC039_printpacklist_multiline_nonlpn"/>
+       </classes>    
+   </test> <!-- Test -->
+     <test name="Test40 printpacklist_multiline_nextday">  
+       <classes>
+      <class name="DHL_pack.TC040_printpacklist_multiline_nextday"/>
+       </classes>    
+   </test> <!-- Test -->
+</suite> <!-- Suite -->
